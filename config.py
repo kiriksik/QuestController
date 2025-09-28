@@ -1,10 +1,8 @@
 import os
 
-from rtmidi.midiconstants import NOTE_ON
-
 # --- Общие настройки ---
-MEDIA_DIR = os.getenv("MEDIA_DIR", "./static/media") # Путь до файлов музыки
-TEMPLATE_DIR = os.getenv("TEMPLATE_DIR", "./static/templates") # Путь до шаблонов страниц
+MEDIA_DIR = os.getenv("MEDIA_DIR", "QuestController/static/media") # Путь до файлов музыки
+TEMPLATE_DIR = os.getenv("TEMPLATE_DIR", "QuestController/static/templates") # Путь до шаблонов страниц
 MIDI_PORT = os.getenv("MIDI_PORT", "loopMIDI Port 1") # Имя порта MIDI из loopMidi
 ARDUINO_BASE_URL = os.getenv("ARDUINO_BASE_URL", "http://192.168.0.55") # Адрес arduino
 NOTE_ON = 0.3 # Время проигрыша ноты
